@@ -3,6 +3,7 @@ provider "aws" {
   shared_credentials_file = "/root/.aws/creds"
   profile                 = "default"
 }
+##test
 resource "aws_instance" "ec2" {
   subnet_id = "subnet-fb4a03a7"
   key_name = "chrisaws"
