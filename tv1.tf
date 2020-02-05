@@ -24,7 +24,7 @@ resource "aws_volume_attachment" "ebs_att" {
 }
 
 resource "aws_ebs_volume" "secondry" {
-  availability_zone = "ap-south-1a"
+  availability_zone = "us-east-1a"
   size              = 8
 }
 
