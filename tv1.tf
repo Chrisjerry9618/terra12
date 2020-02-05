@@ -12,6 +12,7 @@ resource "aws_instance" "ec2" {
   iam_instance_profile = "admin-access"
   associate_public_ip_address = "true"
   root_block_device{volume_size = 8}
+  ebs_block_device{volume_size = 8}
   vpc_security_group_ids = ["sg-03d34d9db9c65fcf5"]
    tags = {
     Name = "Devops-Terraform-BE-dev"
